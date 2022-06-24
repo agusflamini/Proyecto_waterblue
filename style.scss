@@ -16,9 +16,9 @@
 
    /* body{
      /* overflow:hidden*/
-    */
+    
 
-    .fondo{ background: {image: url("./imagenes/swimming-lane-underwater-plain-1-820x532.webp");
+    .fondo{ background: {image: url("./imagenes/swimming-pool-water-blue-athlete-fitness-exercise-F100025184.jpg");
                          repeat: no-repeat;
                          size: cover;
                          position: top center;
@@ -36,13 +36,15 @@
     #tituloPrincipal { font: { family: 'Roboto', sans-serif;
                                size: 150px; }
 
+                        color:white;       
+
         
                       margin: {top: 100;
                                bottom: 5px; }
 
-                      animation: {duration: 10s;
+                      /*animation: {duration: 10s;
                                   iteration-count: infinite;
-                                  name: probando;}
+                                  name: probando;} */
 
                      @media (min-width:576) and (max-width:991px)  
                                  {
@@ -60,51 +62,55 @@
                       
                     }
 
-               
-
-     #subtitulo { font: { family:$h2-font;
-                          weight: 300px;
-                          size: 20px;
-                          weight: bolder ; }
-
-                          color: black;
-                         text-align: center;
-                         margin-top: 10px;
-                        
-                }                
+                      
 
 
 
 
 footer {
           background-color: white;
-          border: solid black;
+         
 
                   #info {
                     margin: 50px;
                   }
 
                   #social{
-                    width: 60px;
-                    height: 60px;
+                    width: 50px;
+                    height: 50px;
                   }
                   li { 
-                    list-style: none;
+                      list-style: none;
+                    &:hover { transform: scale(1.1)}
                   }
                   #titleList {
                     font-weight: bold;
                 
                   }
+
+                  .boton:hover{
+                    background-color:aliceblue;
+                    border: solid orange;
+                 }
+
+                  
         }
 
-form {
+form { padding: 10px;  
+       margin: 15px;
+       background-color: rgba(34,34,34, 0.4);
+
         color: black;
         text-align: center;
         .boton:hover{
                        background-color:aliceblue;
                        border: solid orange;
                     }
-       }
+        h2{ font: { family: $h2-font;
+                  size:15px} 
+           color:white;      
+                }
+        }
 
 nav img {
           width: 60px;
@@ -129,7 +135,7 @@ nav img {
                                   size: $h2-size;}
                           text-align: center; }
 
-            p {  font: { family: 'Open Sans', sans-serif;
+            p {  font: { family: $h2-font;
                                   size: 20px;
                                    }  }
             .imagen {  width: 400px;
@@ -192,6 +198,27 @@ main {
       }
 
 
+      .section { background-color: #C7EFF9;
+                 padding:25px ;
+               .h2 { font: { family: $h2-font;
+                             size: $h2-size;}
+                             text-align: center; 
+                            }
+
+               p { font: { family: $h2-font;
+                           size: 15px;}
+                   text-align: center;  }            
+
+                #imgCarrousel { 
+                                height: 300px;
+                                width: 300px;
+                                border: white 8px solid
+                              }              
+      }
+
+    
+
+
     
     #imgAside {
       width:100%;
@@ -200,3 +227,4 @@ main {
     }
 
 
+    .margin{ margin-top: 100px; }
