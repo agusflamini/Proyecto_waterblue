@@ -15,10 +15,12 @@
 
 
    /* body{
-     /* overflow:hidden*/
+     /* overflow:hidden}*/
     
 
-    .fondo{ background: {image: url("./imagenes/swimming-pool-water-blue-athlete-fitness-exercise-F100025184.jpg");
+    .fondo{ background: {image: url("./imagenes/swimming-pool-water-blue-athlete-fitness-exercise-F100025184.jpg") ;
+      
+      
                          repeat: no-repeat;
                          size: cover;
                          position: top center;
@@ -26,15 +28,15 @@
                          }
                          
                          
-            @media  (max-width:575px) { 
+           /* @media  (max-width:575px) { 
                                         background-color: aliceblue;
-                                        background-image: none;
-                                      }             
+                                        
+                                      } */            
           }
 
 
     #tituloPrincipal { font: { family: 'Roboto', sans-serif;
-                               size: 150px; }
+                               size: 140px; }
 
                         color:white;       
 
@@ -48,12 +50,12 @@
 
                      @media (min-width:576) and (max-width:991px)  
                                  {
-                                    font-size: 80px;
+                                    font-size: 100px;
                                  }
                                 
                       @media  (max-width:575px) 
                                  { 
-                                   font-size: 50px;
+                                   font-size: 100px;
                                  }
                                  
                                 
@@ -88,24 +90,34 @@ footer {
                 
                   }
 
-                  .boton:hover{
-                    background-color:aliceblue;
-                    border: solid orange;
-                 }
+                  .boton{
+                          background-color: map-get( $botonStyle, color1 );
+                  
+
+                         &:hover{
+                            background-color:map-get( $botonStyle, colorHover);
+                            border:map-get( $botonStyle, borde );}
 
                   
-        }
+                        }
+                        }
 
-form { padding: 10px;  
+.form1 { padding: 10px;  
        margin: 15px;
+       margin-top: 100px;
        background-color: rgba(34,34,34, 0.4);
 
         color: black;
         text-align: center;
-        .boton:hover{
-                       background-color:aliceblue;
-                       border: solid orange;
+        .boton { background-color: map-get( $botonStyle, color2);;
+
+      
+                  &:hover{
+                       background-color:map-get( $botonStyle, colorHover);
+                       border: map-get( $botonStyle , borde);
                     }
+                }    
+
         h2{ font: { family: $h2-font;
                   size:15px} 
            color:white;      
@@ -160,40 +172,48 @@ nav img {
 
 
 main {
-       .h2__div { font: { family: $h2-font;
-                  size: $h2-size;}
-                 text-align: center;
-                 margin-top: 80px;
+
+      .h2__div{ transform: rotate(270deg);}
+
+        @mixin texto ($size, $margin) {
+                                              font-family: $h2-font;
+                                              font-size: $size;
+                                              text-align: center;
+                                              margin: $margin;
+                                              font-weight: bolder;
+
+                                             }
 
 
-                }
+       .p__div3 {@include texto (15px, 100px)}
+       .h2__div { @include texto ($h2-size, 200px)}
+       .p__div {@include texto (15px, 80px)}
+       .p__div2 {@include texto (15px, 100px)}
+        
+        
+      
+
+        
 
 
-        .p__div { font: { family: $h2-font;
-                  size: 15px;
-                  weight: bolder;}
-                  margin:80px;
-                }
 
-        .p__div2  { font: { family: $h2-font;
-                    size: 15px;
-                    weight: bolder;}
-                    margin:100px;
-                  }     
+         @mixin div ($fondo){
+                              background-image:($fondo) ;
+                              background-repeat: no-repeat;
+                              background-size: cover;
+                              height: 300px;
+                              
 
-        #Divpages {  background: {image: url("./imagenes/pesas.jpg") ;
-                             repeat: no-repeat;
-                             size: cover;}
+                            }         
 
-                      height: 300px;
-                  }
-             
-        #Divpages2 { background: {image: url("./imagenes/swimming-pool-water-blue-athlete-fitness-exercise-F100025184.jpg") ;
-                             repeat: no-repeat;
-                             size: cover;}
+                            
 
-                      height: 300px;
+        #Divpages {@include div (url("./imagenes/pesas.jpg"))} 
+
+                     
+        #Divpages2 { @include div (url("./imagenes/niños2.jpg"))
                    }
+           
 
       }
 
@@ -205,9 +225,8 @@ main {
                              text-align: center; 
                             }
 
-               p { font: { family: $h2-font;
-                           size: 15px;}
-                   text-align: center;  }            
+               p { @extend .h2;
+                   font-size: 15px;}            
 
                 #imgCarrousel { 
                                 height: 300px;
@@ -224,7 +243,13 @@ main {
       width:100%;
       height:100%;
       object-fit: contain;
+          &:hover { filter: opacity(80%); }
+      
     }
 
 
+
+
     .margin{ margin-top: 100px; }
+
+    

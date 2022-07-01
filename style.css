@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap");
@@ -56,23 +57,21 @@
 }
 
 /* body{
-  /* overflow:hidden*/
+  /* overflow:hidden}*/
 .fondo {
   background-image: url("./imagenes/swimming-pool-water-blue-athlete-fitness-exercise-F100025184.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-}
-@media (max-width: 575px) {
-  .fondo {
-    background-color: aliceblue;
-    background-image: none;
-  }
+  /* @media  (max-width:575px) { 
+                               background-color: aliceblue;
+
+                             } */
 }
 
 #tituloPrincipal {
   font-family: "Roboto", sans-serif;
-  font-size: 150px;
+  font-size: 140px;
   color: white;
   margin-top: 100;
   margin-bottom: 5px;
@@ -82,12 +81,12 @@
 }
 @media (min-width: 576) and (max-width: 991px) {
   #tituloPrincipal {
-    font-size: 80px;
+    font-size: 100px;
   }
 }
 @media (max-width: 575px) {
   #tituloPrincipal {
-    font-size: 50px;
+    font-size: 100px;
   }
 }
 
@@ -110,23 +109,30 @@ footer li:hover {
 footer #titleList {
   font-weight: bold;
 }
+footer .boton {
+  background-color: #16C9BE;
+}
 footer .boton:hover {
   background-color: aliceblue;
-  border: solid orange;
+  border: #F5B041 solid;
 }
 
-form {
+.form1 {
   padding: 10px;
   margin: 15px;
+  margin-top: 100px;
   background-color: rgba(34, 34, 34, 0.4);
   color: black;
   text-align: center;
 }
-form .boton:hover {
-  background-color: aliceblue;
-  border: solid orange;
+.form1 .boton {
+  background-color: #F5B041;
 }
-form h2 {
+.form1 .boton:hover {
+  background-color: aliceblue;
+  border: #F5B041 solid;
+}
+.form1 h2 {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
   color: white;
@@ -150,7 +156,7 @@ nav img {
           animation-name: animame;
 }
 
-main .h2 {
+main .h2, main .section p, .section main p {
   font-family: "Open Sans", sans-serif;
   font-size: 50px;
   text-align: center;
@@ -178,22 +184,35 @@ main h4 {
 }
 
 main .h2__div {
+  transform: rotate(270deg);
+}
+main .p__div3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  margin: 100px;
+  font-weight: bolder;
+}
+main .h2__div {
   font-family: "Open Sans", sans-serif;
   font-size: 50px;
   text-align: center;
-  margin-top: 80px;
+  margin: 200px;
+  font-weight: bolder;
 }
 main .p__div {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
-  font-weight: bolder;
+  text-align: center;
   margin: 80px;
+  font-weight: bolder;
 }
 main .p__div2 {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
-  font-weight: bolder;
+  text-align: center;
   margin: 100px;
+  font-weight: bolder;
 }
 main #Divpages {
   background-image: url("./imagenes/pesas.jpg");
@@ -202,7 +221,7 @@ main #Divpages {
   height: 300px;
 }
 main #Divpages2 {
-  background-image: url("./imagenes/swimming-pool-water-blue-athlete-fitness-exercise-F100025184.jpg");
+  background-image: url("./imagenes/niños2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
@@ -212,15 +231,13 @@ main #Divpages2 {
   background-color: #C7EFF9;
   padding: 25px;
 }
-.section .h2 {
+.section .h2, .section p {
   font-family: "Open Sans", sans-serif;
   font-size: 50px;
   text-align: center;
 }
 .section p {
-  font-family: "Open Sans", sans-serif;
   font-size: 15px;
-  text-align: center;
 }
 .section #imgCarrousel {
   height: 300px;
@@ -233,6 +250,9 @@ main #Divpages2 {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+#imgAside:hover {
+  filter: opacity(80%);
 }
 
 .margin {
