@@ -44,9 +44,7 @@
                       margin: {top: 100;
                                bottom: 5px; }
 
-                      /*animation: {duration: 10s;
-                                  iteration-count: infinite;
-                                  name: probando;} */
+                    
 
                      @media (min-width:576) and (max-width:991px)  
                                  {
@@ -62,7 +60,64 @@
                                 
                                         
                       
-                    }
+                 }
+
+     .actividades {           
+
+                  .titulos { @extend #tituloPrincipal;
+                             color: $titulos-color; 
+
+                             @media (min-width:576) and (max-width:991px)  
+                             {
+                                font-size: 100px;
+                             }
+                            
+                  @media  (max-width:575px) 
+                             { 
+                               font-size: 100px;
+                             }
+              
+                           }   
+
+                  .h2 { font: { family: $h2-font;
+                                  size: $h2-size;}
+                             }        
+                   .boton{
+                            background-color: map-get( $botonStyle, color1 );
+                            
+  
+                           &:hover{
+                              background-color:map-get( $botonStyle, colorHover);
+                              border:map-get( $botonStyle, borde );}
+  
+                    
+                          }         
+                          .imagen {  width: 600px;
+                                    height: 500px; 
+                                  margin-top: 20px;    }
+
+
+                     h3 { font: { family: $h2-font;
+                                  size: 50px ;
+                                       } 
+                          }   
+                          
+                          .divActividades {width: 100px;
+                                           height: 500px;  
+                                            }   
+                                            
+                         .card {  width: 380;
+                                 height: 400px;
+
+
+                                 &:hover { transform: scale(1.1);}                   
+                           
+                              
+                 
+                                }
+                              }
+
+                    
 
                       
 
@@ -90,6 +145,8 @@ footer {
                 
                   }
 
+                  
+
                   .boton{
                           background-color: map-get( $botonStyle, color1 );
                   
@@ -109,7 +166,7 @@ footer {
 
         color: black;
         text-align: center;
-        .boton { background-color: map-get( $botonStyle, color2);;
+        .boton { background-color: map-get( $botonStyle, color2);
 
       
                   &:hover{
@@ -163,6 +220,17 @@ nav img {
           
             h4 { font: { family: $h2-font;
                          size: 30px; } }
+
+                         .boton { background-color: map-get( $botonStyle, color2);
+
+      
+                          &:hover{
+                               background-color:map-get( $botonStyle, colorHover);
+                               border: map-get( $botonStyle , borde);
+                            }        }      
+
+                        
+
                         
         }                
           
@@ -251,5 +319,12 @@ main {
 
 
     .margin{ margin-top: 100px; }
+
+    article {
+               #galeria {
+                 height: 50px;
+                 width: 50px;
+                }
+    }
 
     

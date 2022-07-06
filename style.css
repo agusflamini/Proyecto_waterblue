@@ -2,14 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap");
-/*@keyframes probando {
-    0% {color:white;}
-    25% { color:#FEF41B ;}
-    50% { color: #fef41b;}
-    75% {color:#f7dc6f;}
-    100% { color:#f5b041;}
-  }
-  */
 @-webkit-keyframes animame {
   0% {
     margin-left: 0%;
@@ -69,25 +61,67 @@
                              } */
 }
 
-#tituloPrincipal {
+#tituloPrincipal, .actividades .titulos {
   font-family: "Roboto", sans-serif;
   font-size: 140px;
   color: white;
   margin-top: 100;
   margin-bottom: 5px;
-  /*animation: {duration: 10s;
-              iteration-count: infinite;
-              name: probando;} */
 }
 @media (min-width: 576) and (max-width: 991px) {
-  #tituloPrincipal {
+  #tituloPrincipal, .actividades .titulos {
     font-size: 100px;
   }
 }
 @media (max-width: 575px) {
-  #tituloPrincipal {
+  #tituloPrincipal, .actividades .titulos {
     font-size: 100px;
   }
+}
+
+.actividades .titulos {
+  color: #F5B041;
+}
+@media (min-width: 576) and (max-width: 991px) {
+  .actividades .titulos {
+    font-size: 100px;
+  }
+}
+@media (max-width: 575px) {
+  .actividades .titulos {
+    font-size: 100px;
+  }
+}
+.actividades .h2, .actividades .section p, .section .actividades p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 50px;
+}
+.actividades .boton {
+  background-color: #16C9BE;
+}
+.actividades .boton:hover {
+  background-color: aliceblue;
+  border: #F5B041 solid;
+}
+.actividades .imagen {
+  width: 600px;
+  height: 500px;
+  margin-top: 20px;
+}
+.actividades h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 50px;
+}
+.actividades .divActividades {
+  width: 100px;
+  height: 500px;
+}
+.actividades .card {
+  width: 380;
+  height: 400px;
+}
+.actividades .card:hover {
+  transform: scale(1.1);
 }
 
 footer {
@@ -182,6 +216,13 @@ main h4 {
   font-family: "Open Sans", sans-serif;
   font-size: 30px;
 }
+main .boton {
+  background-color: #F5B041;
+}
+main .boton:hover {
+  background-color: aliceblue;
+  border: #F5B041 solid;
+}
 
 main .h2__div {
   transform: rotate(270deg);
@@ -257,4 +298,9 @@ main #Divpages2 {
 
 .margin {
   margin-top: 100px;
+}
+
+article #galeria {
+  height: 50px;
+  width: 50px;
 }/*# sourceMappingURL=style.css.map */
