@@ -65,7 +65,7 @@
   font-family: "Roboto", sans-serif;
   font-size: 140px;
   color: white;
-  margin-top: 100;
+  margin-top: 100px;
   margin-bottom: 5px;
 }
 @media (min-width: 576) and (max-width: 991px) {
@@ -81,6 +81,8 @@
 
 .actividades .titulos {
   color: #F5B041;
+  margin-bottom: 0px;
+  margin-top: 10px;
 }
 @media (min-width: 576) and (max-width: 991px) {
   .actividades .titulos {
@@ -91,6 +93,12 @@
   .actividades .titulos {
     font-size: 70px;
   }
+}
+.actividades span {
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  color: #16C9BE;
+  margin-top: 0px;
 }
 .actividades .h2, .actividades .section p, .section .actividades p {
   font-family: "Open Sans", sans-serif;
@@ -142,6 +150,14 @@ footer li:hover {
 }
 footer #titleList {
   font-weight: bold;
+}
+footer span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 50px;
+}
+footer .imgHeart {
+  width: 220px;
+  height: 220px;
 }
 footer .boton {
   background-color: #16C9BE;

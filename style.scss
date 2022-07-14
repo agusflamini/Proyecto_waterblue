@@ -41,7 +41,7 @@
                         color:white;       
 
         
-                      margin: {top: 100;
+                      margin: {top: 100px;
                                bottom: 5px; }
 
                     
@@ -65,7 +65,11 @@
      .actividades {           
 
                   .titulos { @extend #tituloPrincipal;
-                             color: $titulos-color; 
+                             color: $titulos-naranja;
+                             margin-bottom: 0px; 
+                             margin-top: 10px;
+
+                            
 
                              @media (min-width:576) and (max-width:991px)  
                              {
@@ -77,7 +81,13 @@
                                font-size: 70px;
                              }
               
-                           }   
+                           }  
+                           
+                           span {  font: { family: $h1-font ;
+                                             size: 50px;}
+                                   color: $titulos-celeste; 
+                                    margin-top: 0px;
+                                } 
 
                   .h2 { font: { family: $h2-font;
                                   size: $h2-size;}
@@ -117,6 +127,8 @@
                                 }
                               }
 
+                        
+ 
                     
 
                       
@@ -144,6 +156,17 @@ footer {
                     font-weight: bold;
                 
                   }
+
+                  span { font-family: $h2-font;
+                        font-size: $h2-size
+
+                  }
+
+                  .imgHeart {
+                             width: 220px;
+                             height: 220px;
+
+                             }
 
                   
 
