@@ -41,7 +41,7 @@
                         color:white;       
 
         
-                      margin: {top: 100px;
+                      margin: {top: 10px;
                                bottom: 5px; }
 
                     
@@ -67,7 +67,7 @@
                   .titulos { @extend #tituloPrincipal;
                              color: $titulos-naranja;
                              margin-bottom: 0px; 
-                             margin-top: 10px;
+                             
 
                             
 
@@ -76,7 +76,7 @@
                                 font-size: 100px;
                              }
                             
-                  @media  (max-width:575px) 
+                            @media  (max-width:575px) 
                              { 
                                font-size: 70px;
                              }
@@ -116,11 +116,11 @@
                                            height: 500px;  
                                             }   
                                             
-                         .card {  width: 380;
-                                 height: 400px;
+                         .card {  width: 320px;
+                                 height: 300px;
 
 
-                                 &:hover { transform: scale(1.1);}                   
+                                              
                            
                               
                  
@@ -138,6 +138,7 @@
 
 footer {
           background-color: white;
+          margin-top: 200px;
          
 
                   #info {

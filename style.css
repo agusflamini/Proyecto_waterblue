@@ -65,7 +65,7 @@
   font-family: "Roboto", sans-serif;
   font-size: 140px;
   color: white;
-  margin-top: 100px;
+  margin-top: 10px;
   margin-bottom: 5px;
 }
 @media (min-width: 576) and (max-width: 991px) {
@@ -82,7 +82,6 @@
 .actividades .titulos {
   color: #F5B041;
   margin-bottom: 0px;
-  margin-top: 10px;
 }
 @media (min-width: 576) and (max-width: 991px) {
   .actividades .titulos {
@@ -125,15 +124,13 @@
   height: 500px;
 }
 .actividades .card {
-  width: 380;
-  height: 400px;
-}
-.actividades .card:hover {
-  transform: scale(1.1);
+  width: 320px;
+  height: 300px;
 }
 
 footer {
   background-color: white;
+  margin-top: 200px;
 }
 footer #info {
   margin: 50px;
