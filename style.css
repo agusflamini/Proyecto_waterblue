@@ -55,10 +55,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  /* @media  (max-width:575px) { 
-                               background-color: aliceblue;
-
-                             } */
 }
 
 #tituloPrincipal, .actividades .titulos {
@@ -101,7 +97,12 @@
 }
 .actividades .h2, .actividades .section p, .section .actividades p {
   font-family: "Open Sans", sans-serif;
-  font-size: 50px;
+  font-size: 40px;
+}
+@media (max-width: 340px) {
+  .actividades .h2, .actividades .section p, .section .actividades p {
+    font-size: 15px;
+  }
 }
 .actividades .boton {
   background-color: #16C9BE;
@@ -150,7 +151,7 @@ footer #titleList {
 }
 footer span {
   font-family: "Open Sans", sans-serif;
-  font-size: 50px;
+  font-size: 40px;
 }
 footer .imgHeart {
   width: 220px;
@@ -205,7 +206,7 @@ nav img {
 
 main .h2, main .section p, .section main p {
   font-family: "Open Sans", sans-serif;
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
 }
 main p {
@@ -249,7 +250,7 @@ main .p__div3 {
 }
 main .h2__div {
   font-family: "Open Sans", sans-serif;
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
   margin: 200px;
   font-weight: bolder;
@@ -287,7 +288,7 @@ main #Divpages2 {
 }
 .section .h2, .section p {
   font-family: "Open Sans", sans-serif;
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
 }
 .section p {

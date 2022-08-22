@@ -28,10 +28,7 @@
                          }
                          
                          
-           /* @media  (max-width:575px) { 
-                                        background-color: aliceblue;
-                                        
-                                      } */            
+                    
           }
 
 
@@ -91,6 +88,10 @@
 
                   .h2 { font: { family: $h2-font;
                                   size: $h2-size;}
+                                  @media  (max-width:340px) 
+                                  { 
+                                    font-size: 15px;
+                                  }
                              }        
                    .boton{
                             background-color: map-get( $botonStyle, color1 );
@@ -219,6 +220,7 @@ nav img {
     animation-duration: 6s;
     animation-iteration-count: 3;
     animation-name: animame;
+
   }
 
 
